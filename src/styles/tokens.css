@@ -1,0 +1,128 @@
+:root {
+  /* Utah Mammoth — Ice Blue */
+  --ice-blue-900: #0a1628;
+  --ice-blue-800: #0f2240;
+  --ice-blue-700: #163366;
+  --ice-blue-600: #1e4d8c;
+  --ice-blue-500: #2d6db5;
+  --ice-blue-400: #4a8fd4;
+  --ice-blue-300: #7bb3e8;
+  --ice-blue-200: #b4d6f5;
+  --ice-blue-100: #dceefb;
+  --ice-blue-50: #eef7fd;
+
+  /* Mammoth Core */
+  --mammoth-black: #0b0e14;
+  --mammoth-bone: #f0ece4;
+
+  /* Vegas Gold (opponent accent only) */
+  --vegas-gold: #b4975a;
+  --vegas-steel: #333f48;
+
+  /* Surfaces */
+  --surface-0: #0b0e14;
+  --surface-1: #121720;
+  --surface-2: #1a202d;
+  --surface-3: #232b3b;
+
+  /* Gradients */
+  --edge-utah: linear-gradient(135deg, #2d6db5, #4a8fd4);
+  --edge-vegas: linear-gradient(135deg, #b4975a, #d4b96a);
+
+  /* Frost / Glow */
+  --frost-glow: rgba(123, 179, 232, 0.15);
+  --gold-glow: rgba(180, 151, 90, 0.15);
+
+  /* Typography */
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+}
+
+/* Typography scale */
+.display-xl {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.display-lg {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.h4 {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.body-lg {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.body-sm {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.mono-stat {
+  font-family: var(--font-body);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
