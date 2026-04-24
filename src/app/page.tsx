@@ -1,11 +1,11 @@
 import StickyHeader from '@/components/StickyHeader';
+import WatchParties from '@/components/WatchParties';
 import HeroGame from '@/components/HeroGame';
 import SeriesSpine from '@/components/SeriesSpine';
 import OriginTimeline from '@/components/OriginTimeline';
 import PlayerCarousel from '@/components/PlayerCarousel';
 import ShotMap from '@/components/ShotMap';
 import TeamStatsBars from '@/components/TeamStatsBars';
-import RallyHub from '@/components/RallyHub';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -13,6 +13,7 @@ export default function Home() {
     <>
       <StickyHeader />
       <main>
+        <WatchParties />
         <HeroGame />
         <SeriesSpine />
         <OriginTimeline />
@@ -21,7 +22,6 @@ export default function Home() {
           <ShotMap />
           <TeamStatsBars />
         </div>
-        <RallyHub />
       </main>
       <Footer />
     </>
