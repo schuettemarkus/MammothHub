@@ -2,7 +2,6 @@ import StickyHeader from '@/components/StickyHeader';
 import WatchParties from '@/components/WatchParties';
 import HeroGame from '@/components/HeroGame';
 import SeriesSpine from '@/components/SeriesSpine';
-import OriginTimeline from '@/components/OriginTimeline';
 import PlayerCarousel from '@/components/PlayerCarousel';
 import ShotMap from '@/components/ShotMap';
 import TeamStatsBars from '@/components/TeamStatsBars';
@@ -15,13 +14,10 @@ export default function Home() {
       <main>
         <WatchParties />
         <HeroGame />
+        <ShotMap />
+        <TeamStatsBars />
         <SeriesSpine />
-        <OriginTimeline />
         <PlayerCarousel />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-          <ShotMap />
-          <TeamStatsBars />
-        </div>
       </main>
       <Footer />
     </>
